@@ -1,13 +1,25 @@
 // import React, { useEffect, useState } from "react";
-import { useParams, useLoaderData, Link } from "react-router-dom";
+import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
 import Spinner from "../components/Spinner";
-import { FaArrowLeft, FaMapMarker } from "react-icons/fa"; 
+import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 
-const JobPage = () => {
-  const { id } = useParams();
+const JobPage = ({ deleteJob }) => {
   //   const [job, setJob] = useState(null);
   //   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
+  const { id } = useParams();
   const job = useLoaderData();
+
+  const onDeleteClick = (jobId) => {
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this job?",
+    );
+    if (!confirmDelete) return;
+
+    deleteJob(jobId);
+
+    navigate("/jobs");
+  };
 
   // <......the useEffect method.......>
   //   useEffect(() => {
@@ -50,7 +62,7 @@ const JobPage = () => {
                 <div className="text-gray-500 mb-4">{job.type}</div>
                 <h1 className="text-3xl font-bold mb-4">{job.title}</h1>
                 <div className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
-                  <FaMapMarker className="text-lg text-orange-700 mr-2"  />
+                  <FaMapMarker className="text-lg text-orange-700 mr-2" />
                   <p className="text-orange-700">{job.location}</p>
                 </div>
               </div>
@@ -60,11 +72,11 @@ const JobPage = () => {
                   Job Description
                 </h3>
 
-                <p className="mb-4">
-                    {job.description}
-                </p>
+                <p className="mb-4">{job.description}</p>
 
-                <h3 className="text-indigo-800 text-lg font-bold mb-2">Salary</h3>
+                <h3 className="text-indigo-800 text-lg font-bold mb-2">
+                  Salary
+                </h3>
 
                 <p className="mb-4">{job.salary} / Year</p>
               </div>
@@ -78,21 +90,21 @@ const JobPage = () => {
 
                 <h2 className="text-2xl">{job.company.name}</h2>
 
-                <p className="my-2">
-                    {job.company.description}
-                </p>
+                <p className="my-2">{job.company.description}</p>
 
                 <hr className="my-4" />
 
                 <h3 className="text-xl">Contact Email:</h3>
 
                 <p className="my-2 bg-indigo-100 p-2 font-bold">
-                    { job.company.contactEmail }
+                  {job.company.contactEmail}
                 </p>
 
                 <h3 className="text-xl">Contact Phone:</h3>
 
-                <p className="my-2 bg-indigo-100 p-2 font-bold">{job.company.contactPhone}</p>
+                <p className="my-2 bg-indigo-100 p-2 font-bold">
+                  {job.company.contactPhone}
+                </p>
               </div>
 
               {/* <!-- Manage --> */}
@@ -104,7 +116,10 @@ const JobPage = () => {
                 >
                   Edit Job
                 </Link>
-                <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
+                <button
+                  onClick={() => onDeleteClick(job.id) }
+                  className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                >
                   Delete Job
                 </button>
               </div>
