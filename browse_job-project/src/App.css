@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+*{
+    font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
 .backgroundImage {
   background-image: url("../src//assets/images/hero_background.jpg");
   background-size: cover;
@@ -11,4 +20,34 @@
 .heroText {
   /* box-shadow: 0 4px 4px -2px; */
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.cardEffect {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.cardEffect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.buttonEffect {
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+.buttonEffect:hover {
+  background-color: #4a5568;
+  transform: translateY(-2px);
+}
+
+/* input{
+  padding: 5px 0px 5px 0px;
+} */
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

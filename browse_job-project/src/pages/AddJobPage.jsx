@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 
-const AddJobPage = ({addJobSubmit}) => {
+const AddJobPage = ({ addJobSubmit }) => {
   const [title, setTitle] = useState("");
   const [type, setType] = useState("Full-Time");
   const [description, setDescription] = useState("");
@@ -13,12 +13,11 @@ const AddJobPage = ({addJobSubmit}) => {
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
   const navigate = useNavigate();
-  
 
   const submitForm = (e) => {
     e.preventDefault();
     const newJob = {
-    //   id: Date.now(),
+      //   id: Date.now(),
       title,
       type,
       description,
@@ -30,7 +29,7 @@ const AddJobPage = ({addJobSubmit}) => {
         contactEmail,
         contactPhone,
       },
-    }
+    };
     addJobSubmit(newJob);
     toast.success("Job added successfully!");
     return navigate("/jobs");
@@ -39,12 +38,18 @@ const AddJobPage = ({addJobSubmit}) => {
   return (
     <>
       <section className="bg-indigo-50">
-        <div className="container m-auto max-w-2xl py-24">
+        <div className="container m-auto max-w-3xl py-24">
           <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
             <form onSubmit={submitForm}>
-              <h2 className="text-3xl text-center font-semibold mb-6">
-                Add Job
-              </h2>
+              <div className="flex-row mb-6 heroText center">
+                <div className="w-12 h-1 mr-2 bg-indigo-400 rounded-lg"></div>
+                <div>
+                  <h2 className="text-3xl font-semibold mb-1 text-gray-700 ">
+                    Add Job
+                  </h2>
+                </div>
+                <div className="w-12 h-1 ml-2 bg-indigo-400 rounded-lg"></div>
+              </div>
 
               <div className="mb-4">
                 <label
@@ -146,8 +151,8 @@ const AddJobPage = ({addJobSubmit}) => {
                 />
               </div>
 
-              <h3 className="text-2xl mb-5">Company Info</h3>
-
+              <h3 className="text-xl mb-1 heroText">Company Info</h3>
+              <div className="w-16 h-1 bg-indigo-400 mb-5 heroText rounded-lg"></div>
               <div className="mb-4">
                 <label
                   htmlFor="company"

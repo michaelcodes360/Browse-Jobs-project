@@ -18,13 +18,13 @@
       "id": "2",
       "title": "Front-End Engineer (React & Redux)",
       "type": "Full-Time",
-      "location": "Miami, FL",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
+      "description": "Come work with us in sunny Miami, Florida as a front-end developer. A driven individual who is passionate about creating stunning and responsive web applications is what we are searching for. Strong attention to detail and familiarity with UI/UX design principles are highly valued.",
       "salary": "$70K - $80K",
+      "location": "Miami, FL",
       "company": {
         "name": "Veneer Solutions",
-        "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-        "contactEmail": "contact@loremipsum.com",
+        "description": "Digital design and development are the areas of expertise for the creative firm Veneer Solutions. In order to provide our clients with outstanding outcomes, our team is committed to pushing the limits of creativity and innovation.",
+        "contactEmail": "veneersolutions@loremipsum.com",
         "contactPhone": "555-555-5555"
       }
     },
@@ -99,7 +99,8 @@
       "id": "ZRwNJHg"
     },
     {
-      "title": "Cyber Security",
+      "id": "zLzGl_b",
+      "title": "Junior React Developer",
       "type": "Internship",
       "description": "Are you seeking employment as a cybersecurity specialist? \nJoin us in our mission to safeguard information and systems. Your expertise could be the key to our success.",
       "salary": "$100K - 125K",
@@ -109,22 +110,21 @@
         "description": "Alpha Tech specialises in providing comprehensive cybersecurity solutions designed to protect businesses from evolving digital threats. Our services include risk assessments, threat detection, incident response, and security training for employees. We implement advanced technologies such as firewalls, intrusion detection systems, and encryption to safeguard sensitive data. Additionally, we offer compliance consulting to ensure that organisations meet industry regulations and standards. Our goal is to create a secure digital environment that allows businesses to operate confidently and efficiently.",
         "contactEmail": "michaelakoto100@gmail.com",
         "contactPhone": "0996868447"
-      },
-      "id": "zLzGl_b"
+      }
     },
     {
-      "title": "Testing Job for part-time",
-      "type": "Full-Time",
-      "description": "Just a test",
-      "salary": "$150K - 175K",
-      "location": "Adenta",
+      "id": "npdaTto",
+      "title": "Testing Job for remote",
+      "type": "Remote",
+      "description": "Just a test for a remote job",
+      "salary": "$125K - 150K",
+      "location": "East Legon",
       "company": {
-        "name": "360 code",
-        "description": "We discover talents to break into the tech fraternity",
-        "contactEmail": "code360@360.net",
-        "contactPhone": "0338828384"
-      },
-      "id": "npdaTto"
+        "name": "Remote Jobs Company",
+        "description": "We discover talents to in across the globe",
+        "contactEmail": "remoteJobs@360.com",
+        "contactPhone": "0872736452"
+      }
     }
   ]
 }
