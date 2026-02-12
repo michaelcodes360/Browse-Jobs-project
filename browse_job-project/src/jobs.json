@@ -44,11 +44,11 @@
     },
     {
       "id": "4",
-      "title": "React Front-End Developer",
+      "title": "React Front-End Dev",
       "type": "Part-Time",
       "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-      "location": "Pheonix, AZ",
       "salary": "$60K - $70K",
+      "location": "Pheonix, AZ",
       "company": {
         "name": "Alpha Elite",
         "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
@@ -83,6 +83,48 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "title": "Dev OPs",
+      "type": "Part-Time",
+      "description": "DevOps is a collaborative approach that integrates software development (Dev) and IT operations (Ops) to enhance the efficiency of delivering applications and services. It emphasises automation, continuous integration, and continuous delivery, enabling teams to respond quickly to market changes and customer needs. By fostering a culture of collaboration and shared responsibility, DevOps aims to improve software quality and accelerate deployment cycles.",
+      "salary": "$125K - 150K",
+      "location": "Los Angeles",
+      "company": {
+        "name": "Tech Genesis",
+        "description": "Tech Genesis is a pioneering technology company dedicated to transforming innovative ideas into cutting-edge solutions. With a focus on sustainability and user-centric design, we empower businesses to thrive in the digital age.",
+        "contactEmail": "techalpha360@gmail.com",
+        "contactPhone": "0394847367"
+      },
+      "id": "ZRwNJHg"
+    },
+    {
+      "title": "Cyber Security",
+      "type": "Internship",
+      "description": "Are you seeking employment as a cybersecurity specialist? \nJoin us in our mission to safeguard information and systems. Your expertise could be the key to our success.",
+      "salary": "$100K - 125K",
+      "location": "Oyarifa",
+      "company": {
+        "name": "Alpha Tech",
+        "description": "Alpha Tech specialises in providing comprehensive cybersecurity solutions designed to protect businesses from evolving digital threats. Our services include risk assessments, threat detection, incident response, and security training for employees. We implement advanced technologies such as firewalls, intrusion detection systems, and encryption to safeguard sensitive data. Additionally, we offer compliance consulting to ensure that organisations meet industry regulations and standards. Our goal is to create a secure digital environment that allows businesses to operate confidently and efficiently.",
+        "contactEmail": "michaelakoto100@gmail.com",
+        "contactPhone": "0996868447"
+      },
+      "id": "zLzGl_b"
+    },
+    {
+      "title": "Testing Job for part-time",
+      "type": "Full-Time",
+      "description": "Just a test",
+      "salary": "$150K - 175K",
+      "location": "Adenta",
+      "company": {
+        "name": "360 code",
+        "description": "We discover talents to break into the tech fraternity",
+        "contactEmail": "code360@360.net",
+        "contactPhone": "0338828384"
+      },
+      "id": "npdaTto"
     }
   ]
 }

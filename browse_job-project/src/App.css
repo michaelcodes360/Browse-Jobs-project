@@ -1,0 +1,14 @@
+.backgroundImage {
+  background-image: url("../src//assets/images/hero_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  /* box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5); */
+  --tw-bg-opacity: 1;
+  background-color: rgba(26, 78, 103, 0.52);
+}
+
+.heroText {
+  /* box-shadow: 0 4px 4px -2px; */
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaMapMarker} from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaUserTie } from "react-icons/fa6";
 
 const Joblisting = ({ job }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);

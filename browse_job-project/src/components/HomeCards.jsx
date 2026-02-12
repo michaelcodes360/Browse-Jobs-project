@@ -1,16 +1,20 @@
+import { FaUserTie, FaUsers  } from 'react-icons/fa6'
 import Card from './Cards'
 import { Link } from 'react-router-dom'
 
-const HomeCards = ({bg}) => {
+
+const HomeCards = () => {
   return (
     <>
     <section className="py-4">
         <div className="container-xl lg:container m-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
             <Card bg={'bg-gray-100'}>
-                <h2 className="text-2xl font-bold">For Developers</h2>
+                <h2 className="text-2xl font-bold flex items-center gap-4">
+                  <FaUsers /> Talents
+                  </h2>
               <p className="mt-2 mb-4">
-                Browse our React jobs and start your career today
+                Browse our jobs and start your career today
               </p>
               <Link
                 to="/jobs"
@@ -20,9 +24,9 @@ const HomeCards = ({bg}) => {
               </Link>
             </Card>
             <Card bg={'bg-indigo-100'}>
-                <h2 className="text-2xl font-bold">For Employers</h2>
+                <h2 className="text-2xl font-bold flex items-center gap-4"><FaUserTie  />Recruiter</h2>
               <p className="mt-2 mb-4">
-                List your job to find the perfect developer for the role
+                List your job to find the perfect talent for the role
               </p>
               <Link
                 to="/add-job"
