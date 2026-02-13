@@ -1,18 +1,19 @@
-import { FaUserTie, FaUsers  } from 'react-icons/fa6'
-import Card from './Cards'
-import { Link } from 'react-router-dom'
-
+import { FaUserTie, FaUsers } from "react-icons/fa6";
+import { LiaUsersSolid } from "react-icons/lia";
+import Card from "./Cards";
+import { Link } from "react-router-dom";
 
 const HomeCards = () => {
   return (
     <>
-    <section className="py-4">
+      <section className="py-4">
         <div className="container-xl lg:container m-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
-            <Card bg={'bg-gray-100'}>
-                <h2 className="text-2xl font-bold flex items-center gap-4">
-                  <FaUsers /> Talents
-                  </h2>
+            <Card bg={"bg-gray-100"}>
+              <h2 className="text-2xl font-bold flex items-center gap-4">
+                {/* <FaUsers color="blue" /> */}
+                 <LiaUsersSolid size={32} color="blue" />Talents
+              </h2>
               <p className="mt-2 mb-4">
                 Browse our jobs and start your career today
               </p>
@@ -23,8 +24,11 @@ const HomeCards = () => {
                 Browse Jobs
               </Link>
             </Card>
-            <Card bg={'bg-indigo-100'}>
-                <h2 className="text-2xl font-bold flex items-center gap-4"><FaUserTie  />Recruiter</h2>
+            <Card bg={"bg-indigo-100"}>
+              <h2 className="text-2xl font-bold flex items-center gap-4">
+                <FaUserTie color="indigo" />
+                Recruiter
+              </h2>
               <p className="mt-2 mb-4">
                 List your job to find the perfect talent for the role
               </p>
@@ -39,7 +43,7 @@ const HomeCards = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default HomeCards
+export default HomeCards;

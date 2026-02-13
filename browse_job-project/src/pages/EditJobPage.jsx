@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams, useLoaderData, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-const EditJobPage = ({ updatetJobSubmit}) => {
+const EditJobPage = ({ updatetJobSubmit }) => {
   const job = useLoaderData();
   const [title, setTitle] = useState(job.title);
   const [type, setType] = useState(job.type);
@@ -16,7 +16,7 @@ const EditJobPage = ({ updatetJobSubmit}) => {
   const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
   const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
   const navigate = useNavigate();
-    const { id } = useParams();
+  const { id } = useParams();
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -46,8 +46,8 @@ const EditJobPage = ({ updatetJobSubmit}) => {
         <div className="container m-auto max-w-2xl py-24">
           <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
             <form onSubmit={submitForm}>
-              <h2 className="text-3xl text-center font-semibold mb-6">
-                Add Job
+              <h2 className="text-3xl text-center font-semibold mb-6 heroText">
+                Edit Job
               </h2>
 
               <div className="mb-4">
@@ -156,7 +156,8 @@ const EditJobPage = ({ updatetJobSubmit}) => {
                 />
               </div>
 
-              <h3 className="text-2xl mb-5">Company Info</h3>
+              <h3 className="text-xl mb-1 heroText">Company Info</h3>
+              <div className="w-16 h-1 bg-indigo-400 mb-5 heroText rounded-lg"></div>
 
               <div className="mb-4">
                 <label

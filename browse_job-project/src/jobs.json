@@ -125,6 +125,48 @@
         "contactEmail": "remoteJobs@360.com",
         "contactPhone": "0872736452"
       }
+    },
+    {
+      "id": "msiF3sG",
+      "title": "Java Developer",
+      "type": "Full-Time",
+      "description": "some job description",
+      "salary": "$100K - 125K",
+      "location": "Accra",
+      "company": {
+        "name": "",
+        "description": "We are a forward-thinking company dedicated to innovation and excellence, providing top-notch solutions tailored to our clients' needs. Our team of experts collaborates to drive success and foster growth in a dynamic marketplace.",
+        "contactEmail": "veneersolutions@loremipsum.com",
+        "contactPhone": "98765432456789009876"
+      }
+    },
+    {
+      "id": "ey5vQjD",
+      "title": "New Job Listing",
+      "type": "Part-Time",
+      "description": "876545",
+      "salary": "$125K - 150K",
+      "location": "Los Angeles",
+      "company": {
+        "name": "Mc Donalds",
+        "description": "hdfjdfhj",
+        "contactEmail": "michaelakoto100@gmail.com",
+        "contactPhone": "0848584542"
+      }
+    },
+    {
+      "title": "Testing Job",
+      "type": "Remote",
+      "description": "Just testing out ",
+      "salary": "$175K - 200K",
+      "location": "Oasis",
+      "company": {
+        "name": "Test Company",
+        "description": "Nothing to say",
+        "contactEmail": "random@example.com",
+        "contactPhone": "0345678908"
+      },
+      "id": "dy0c7G4"
     }
   ]
 }

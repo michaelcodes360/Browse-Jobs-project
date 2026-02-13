@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import jobs from "../jobs.json";
 import Joblisting from "./Joblisting";
 import Spinner from "./Spinner";
+import { IoMdRefreshCircle } from "react-icons/io";
 
 const JobListings = ({ isHome = false }) => {
   const [jobs, setJobs] = useState([]);
@@ -54,14 +55,18 @@ const JobListings = ({ isHome = false }) => {
               </h2>
               <div className="w-20 h-1 bg-indigo-500 mb-6 heroText rounded-lg"></div>
             </span>
-
-            <input
-              value={jobs.id}
-              type="search"
-              placeholder="Search jobs..."
-              className="ml-auto w-60 px-3 py-0 border rounded-lg focus:outline-none focus:ring-1 focus:ring-indigo-500 mb-2"
-              onKeyDown={handleSearch}
-            />
+            <span className="flex items-center gap-2 ml-auto">
+              <button title="Refresh" onClick={() => window.location.reload()} >
+                <IoMdRefreshCircle size={37} color="blue" className="refreshbtn" />
+              </button>
+              <input
+                value={jobs.id}
+                type="search"
+                placeholder="Search jobs..."
+                className="ml-auto w-80 px-3 py-3 border rounded-lg focus:outline-none focus:ring-1 focus:ring-indigo-500 mb-2"
+                onKeyDown={handleSearch}
+              />
+            </span>
           </div>
 
           {loading ? (

@@ -14,6 +14,9 @@ const AddJobPage = ({ addJobSubmit }) => {
   const [contactPhone, setContactPhone] = useState("");
   const navigate = useNavigate();
 
+  const isValidEmail = (contactEmail) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail);
+
   const submitForm = (e) => {
     e.preventDefault();
     const newJob = {
@@ -31,27 +34,60 @@ const AddJobPage = ({ addJobSubmit }) => {
       },
     };
     addJobSubmit(newJob);
+    validateForm();
     toast.success("Job added successfully!");
     return navigate("/jobs");
+  };
+
+    const validateForm = () => {
+    if (!title.trim()) {
+      toast.error("Add a job name");
+      return false;
+    }
+    if (!description.trim()) {
+      toast.error("Add a job description");
+      return false;
+    }
+    if (!location.trim()) {
+      toast.error("Location is required");
+      return false;
+    }
+    if (!companyDescription.trim()) {
+      toast.error("Give a short description of your company");
+      return false;
+    }
+    if (!companyName.trim()) {
+      toast.error("Company Name is required");
+      return false;
+    }
+    if ((!isValidEmail(contactEmail.trim()))) {
+      toast.error("Please enter a valid email include '@' and .");
+      return false;
+    }
+
+    if (!contactPhone.trim()) {
+      toast.error("Contact phone is required");
+      return false;
+    }
   };
 
   return (
     <>
       <section className="bg-indigo-50">
         <div className="container m-auto max-w-3xl py-24">
-          <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
+          <div className="bg-white px-6 py-8 mb-2 shadow-md rounded-md border m-4 md:m-0">
             <form onSubmit={submitForm}>
-              <div className="flex-row mb-6 heroText center">
-                <div className="w-12 h-1 mr-2 bg-indigo-400 rounded-lg"></div>
-                <div>
-                  <h2 className="text-3xl font-semibold mb-1 text-gray-700 ">
+              <div className="flex-row mb-6 heroText text-center">
+                {/* <div className="w-12 h-1 mr-2 bg-indigo-400 rounded-lg"></div>
+                <div> */}
+                  <h2 className="text-3xl font-semibold mb-1">
                     Add Job
                   </h2>
-                </div>
-                <div className="w-12 h-1 ml-2 bg-indigo-400 rounded-lg"></div>
+                {/* </div>
+                <div className="w-12 h-1 ml-2 bg-indigo-400 rounded-lg"></div> */}
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
                   htmlFor="type"
                   className="block text-gray-700 font-bold mb-2"
@@ -61,11 +97,13 @@ const AddJobPage = ({ addJobSubmit }) => {
                 <select
                   id="type"
                   name="type"
-                  className="border rounded w-full py-2 px-3"
+                  className="border rounded w-full py-2 px-3 focus:ring-indigo-500 mb-1"
+                  // className={`border rounded w-full py-2 px-3 ${!type ? 'border-red-500' : }`}
                   required
                   value={type}
                   onChange={(e) => setType(e.target.value)}
                 >
+                  {/* <option value="" disabled hidden>Select a job type</option> */}
                   <option value="Full-Time">Full-Time</option>
                   <option value="Part-Time">Part-Time</option>
                   <option value="Remote">Remote</option>
@@ -73,7 +111,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 </select>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <label className="block text-gray-700 font-bold mb-2">
                   Job Listing Name
                 </label>
@@ -81,14 +119,15 @@ const AddJobPage = ({ addJobSubmit }) => {
                   type="text"
                   id="title"
                   name="title"
-                  className="border rounded w-full py-2 px-3 mb-2"
-                  placeholder="eg. Beautiful Apartment In Miami"
+                  className="border rounded w-full py-2 px-3 mb-1 focus:ring-indigo-500"
+                  //  className={`border rounded w-full py-2 px-3 mb-1 ${title ? 'border-red-500' : ""}`}
+                  placeholder="eg. React Developer"
                   required
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
                   htmlFor="description"
                   className="block text-gray-700 font-bold mb-2"
@@ -98,15 +137,16 @@ const AddJobPage = ({ addJobSubmit }) => {
                 <textarea
                   id="description"
                   name="description"
-                  className="border rounded w-full py-2 px-3 resize-none"
+                  className="border rounded w-full py-2 px-3 resize-none focus:ring-indigo-500 mb-1"
                   rows="4"
                   placeholder="Add any job duties, expectations, requirements, etc"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
+                  required
                 ></textarea>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
                   htmlFor="type"
                   className="block text-gray-700 font-bold mb-2"
@@ -116,7 +156,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 <select
                   id="salary"
                   name="salary"
-                  className="border rounded w-full py-2 px-3"
+                  className="border rounded w-full py-2 px-3 focus:ring-indigo-500 mb-1"
                   required
                   value={salary}
                   onChange={(e) => setSalary(e.target.value)}
@@ -135,7 +175,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 </select>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <label className="block text-gray-700 font-bold mb-2">
                   Location
                 </label>
@@ -143,7 +183,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                   type="text"
                   id="location"
                   name="location"
-                  className="border rounded w-full py-2 px-3 mb-2"
+                  className="border rounded w-full py-2 px-3 mb-2 focus:ring-indigo-500"
                   placeholder="Company Location"
                   required
                   value={location}
@@ -153,7 +193,7 @@ const AddJobPage = ({ addJobSubmit }) => {
 
               <h3 className="text-xl mb-1 heroText">Company Info</h3>
               <div className="w-16 h-1 bg-indigo-400 mb-5 heroText rounded-lg"></div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
                   htmlFor="company"
                   className="block text-gray-700 font-bold mb-2"
@@ -164,16 +204,16 @@ const AddJobPage = ({ addJobSubmit }) => {
                   type="text"
                   id="company"
                   name="company"
-                  className="border rounded w-full py-2 px-3"
+                  className="border rounded w-full py-2 px-3 focus:ring-indigo-500 mb-1"
                   placeholder="Company Name"
                   value={companyName}
                   onChange={(e) => setCompanyName(e.target.value)}
                 />
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
-                  for="company_description"
+                  htmlFor="company_description"
                   className="block text-gray-700 font-bold mb-2"
                 >
                   Company Description
@@ -181,17 +221,18 @@ const AddJobPage = ({ addJobSubmit }) => {
                 <textarea
                   id="company_description"
                   name="company_description"
-                  className="border rounded w-full py-2 px-3 resize-none"
+                  className="border rounded w-full py-2 px-3 resize-none "
                   rows="4"
                   placeholder="What does your company do?"
                   value={companyDescription}
                   onChange={(e) => setCompanyDescription(e.target.value)}
+                  required
                 ></textarea>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
-                  htmlForfor="contact_email"
+                  htmlFor="contact_email"
                   className="block text-gray-700 font-bold mb-2"
                 >
                   Contact Email
@@ -200,14 +241,14 @@ const AddJobPage = ({ addJobSubmit }) => {
                   type="email"
                   id="contact_email"
                   name="contact_email"
-                  className="border rounded w-full py-2 px-3"
+                  className="border rounded w-full py-2 px-3 focus:ring-indigo-500 mb-1"
                   placeholder="Email address for applicants"
                   required
                   value={contactEmail}
                   onChange={(e) => setContactEmail(e.target.value)}
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <label
                   htmlFor="contact_phone"
                   className="block text-gray-700 font-bold mb-2"
@@ -218,15 +259,18 @@ const AddJobPage = ({ addJobSubmit }) => {
                   type="tel"
                   id="contact_phone"
                   name="contact_phone"
-                  className="border rounded w-full py-2 px-3"
+                  className="border rounded w-full py-2 px-3 focus:ring-indigo-500 mb-1"
                   placeholder="Optional phone for applicants"
                   value={contactPhone}
                   onChange={(e) => setContactPhone(e.target.value)}
+                  required
+                  max={10}
                 />
               </div>
 
               <div>
                 <button
+                  onClick={validateForm}
                   className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
                   type="submit"
                 >
