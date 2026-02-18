@@ -75,8 +75,8 @@
       "title": "React Native Developer",
       "type": "Full-Time",
       "description": "Join our team as a Front-End Developer in beautiful Portland, OR. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
-      "location": "Portland, OR",
       "salary": "$100K - $110K",
+      "location": "Portland, OR",
       "company": {
         "name": "Port Solutions INC",
         "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
@@ -141,20 +141,6 @@
       }
     },
     {
-      "id": "ey5vQjD",
-      "title": "New Job Listing",
-      "type": "Part-Time",
-      "description": "876545",
-      "salary": "$125K - 150K",
-      "location": "Los Angeles",
-      "company": {
-        "name": "Mc Donalds",
-        "description": "hdfjdfhj",
-        "contactEmail": "michaelakoto100@gmail.com",
-        "contactPhone": "0848584542"
-      }
-    },
-    {
       "title": "Testing Job",
       "type": "Remote",
       "description": "Just testing out ",
@@ -167,6 +153,20 @@
         "contactPhone": "0345678908"
       },
       "id": "dy0c7G4"
+    },
+    {
+      "title": "Data Analyst",
+      "type": "Part-Time",
+      "description": "A data analyst is responsible for collecting, processing, and analysing data to help organisations make informed decisions. They utilise statistical tools and software to interpret trends and patterns, presenting their findings through reports and visualisations. Additionally, data analysts collaborate with various departments to identify business needs and provide actionable insights.",
+      "salary": "Under $50K",
+      "location": "East Legon",
+      "company": {
+        "name": "The Analyst",
+        "description": "We are seeking a dedicated and skilled data analyst to join our team. The ideal candidate will be responsible for managing and analysing all big data. This role requires strong teamwork and critical thinking.",
+        "contactEmail": "theanalyst@gmail.com",
+        "contactPhone": "5342323232"
+      },
+      "id": "YpwwRDf"
     }
   ]
 }
