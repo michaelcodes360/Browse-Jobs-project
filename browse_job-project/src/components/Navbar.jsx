@@ -17,7 +17,7 @@ const Navbar = ({Slogan="Built for Every Hustle"}) => {
             <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
               <NavLink className="flex flex-shrink-0 items-center mr-4"  to="/">
                 <img
-                  className="object-cover h-20 w-auto "
+                  className="object-cover h-20 w-auto"
                   //   src="images/logo.png"
                   src={logo}
                   alt="React Jobs"
