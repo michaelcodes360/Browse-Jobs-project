@@ -12,7 +12,7 @@ const Spinner = ({ loading }) => {
         color="#4F46E5"
         loading={loading}
         cssOverride={override}
-        size={100}
+        size={80}
       />
       {/* <ClimbingBoxLoader
         color="#4F46E5"

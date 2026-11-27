@@ -113,46 +113,18 @@
       }
     },
     {
-      "id": "npdaTto",
-      "title": "Testing Job for remote",
-      "type": "Remote",
-      "description": "Just a test for a remote job",
-      "salary": "$125K - 150K",
-      "location": "East Legon",
-      "company": {
-        "name": "Remote Jobs Company",
-        "description": "We discover talents to in across the globe",
-        "contactEmail": "remoteJobs@360.com",
-        "contactPhone": "0872736452"
-      }
-    },
-    {
       "id": "msiF3sG",
       "title": "Java Developer",
       "type": "Full-Time",
-      "description": "some job description",
+      "description": "Java developer specialised in backend development",
       "salary": "$100K - 125K",
       "location": "Accra",
       "company": {
         "name": "",
         "description": "We are a forward-thinking company dedicated to innovation and excellence, providing top-notch solutions tailored to our clients' needs. Our team of experts collaborates to drive success and foster growth in a dynamic marketplace.",
         "contactEmail": "veneersolutions@loremipsum.com",
-        "contactPhone": "98765432456789009876"
+        "contactPhone": "0893747373"
       }
-    },
-    {
-      "title": "Testing Job",
-      "type": "Remote",
-      "description": "Just testing out ",
-      "salary": "$175K - 200K",
-      "location": "Oasis",
-      "company": {
-        "name": "Test Company",
-        "description": "Nothing to say",
-        "contactEmail": "random@example.com",
-        "contactPhone": "0345678908"
-      },
-      "id": "dy0c7G4"
     },
     {
       "title": "Data Analyst",
@@ -167,6 +139,90 @@
         "contactPhone": "5342323232"
       },
       "id": "YpwwRDf"
+    },
+    {
+      "id": "YJKjeyY",
+      "title": "UI/UX Designer",
+      "type": "Remote",
+      "description": "User Experience and User Interface Designer",
+      "salary": "$50K - 60K",
+      "location": "Los Angeles",
+      "company": {
+        "name": "User X Solutions",
+        "description": "User Experience and User Interface Solutions",
+        "contactEmail": "maappianti100@gmail.com",
+        "contactPhone": "0888495974"
+      }
+    },
+    {
+      "title": ".Net developer",
+      "type": "Full-Time",
+      "description": "should be very good C# and master SQL's",
+      "salary": "$80K - 90K",
+      "location": "Oasis",
+      "company": {
+        "name": "Tech Genesis",
+        "description": "Tech Genesis refers to the innovative emergence of technology that transforms industries and society. It signifies the beginning of groundbreaking advancements that shape our digital future. This concept embodies the fusion of creativity and technology, driving progress and change.",
+        "contactEmail": "techG@gmail.com",
+        "contactPhone": "0996868447"
+      },
+      "id": "D7ujF-s"
+    },
+    {
+      "id": "ZWUXIlz",
+      "title": "Product Manager",
+      "type": "Full-Time",
+      "description": "A professional responsible for guiding the development and marketing of products.",
+      "salary": "$50K - 60K",
+      "location": "Los Angeles",
+      "company": {
+        "name": "Alpha code",
+        "description": "we build apps, we secure data",
+        "contactEmail": "alpha@gmail.com",
+        "contactPhone": "098434888783"
+      }
+    },
+    {
+      "id": "Bf2qDlO",
+      "title": "Sales Force Admin",
+      "type": "Part-Time",
+      "description": "A Sales Force Admin is a professional responsible for managing and optimizing the Salesforce platform to enhance sales processes and support users.",
+      "salary": "$80K - 90K",
+      "location": "Atlanta, GA",
+      "company": {
+        "name": "Easy hub solutions",
+        "description": "Innovative and reliable hub solutions provider.",
+        "contactEmail": "easyhub100@gmail.com",
+        "contactPhone": "055-585-5559"
+      }
+    },
+    {
+      "title": "Blazor Developer",
+      "type": "Full-Time",
+      "description": "C# Blazor Developer",
+      "salary": "$70K - 80K",
+      "location": "East Legon",
+      "company": {
+        "name": "POINEER DEV LIMITED",
+        "description": "We specialise in C# Development",
+        "contactEmail": "poineer101@gmail.com",
+        "contactPhone": "0553833939"
+      },
+      "id": "qZfg0CI"
+    },
+    {
+      "id": "2Mgl2XN",
+      "title": "Cloud Engineer",
+      "type": "Full-Time",
+      "description": "A professional responsible for designing and managing cloud-based systems.",
+      "salary": "$100K - 125K",
+      "location": "Koforidua",
+      "company": {
+        "name": "GenZ Solutions",
+        "description": "Youthful Innovations",
+        "contactEmail": "genZ100@gmail.com",
+        "contactPhone": "054-589-7567"
+      }
     }
   ]
 }

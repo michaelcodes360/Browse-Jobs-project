@@ -1,0 +1,491 @@
+/* =========================================
+   ADD JOB PAGE
+========================================= */
+
+.add-job-page {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.add-job-page .container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 0 24px; */
+}
+
+.add-job-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-right: -14px;
+  margin-left: -14px; */
+}
+
+.add-job-page .row > [class*="col-"] {
+  width: 100%;
+  /* padding-right: 14px;
+  padding-left: 14px; */
+}
+
+.add-job-page .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.add-job-layout {
+  min-height: calc(100vh - 84px);
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* =========================================
+   LEFT VISUAL SECTION
+========================================= */
+
+.add-job-visual-section {
+  display: flex;
+  height: 100dvh;
+  width: 100dvh;
+  overflow: hidden;
+}
+
+.add-job-visual-inner {
+  position: relative;
+  width: 100%;
+}
+
+.add-job-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 6px; */
+  /* background: #ffffff; */
+  /* box-shadow: 0 14px 28px rgba(6, 51, 65, 0.18); */
+  filter: grayscale();
+  /* filter: blur(2px); */
+}
+
+.add-job-slideshow .image-slideshow__image {
+  object-position: center;
+}
+
+/* =========================================
+   RIGHT FORM SECTION
+========================================= */
+
+.add-job-form-section {
+  display: flex;
+}
+
+.add-job-form-wrapper {
+  width: 100%;
+
+  padding: 42px;
+ 
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.add-job-heading {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.add-job-eyebrow {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: #147b99;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.add-job-heading h3 {
+  margin: 0 0 9px;
+  color: #172033;
+  font-size: clamp(31px, 3vw, 40px);
+  font-weight: 750;
+  line-height: 1.12;
+}
+
+.add-job-heading p {
+  max-width: 520px;
+  margin: 0;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.add-job-form {
+  width: 100%;
+}
+
+.add-job-form .row {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.add-job-form .row > [class*="col-"] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.form-section {
+  margin-bottom: 32px;
+  border: 1px solid #d1d7da;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.company-section {
+  margin-top: 4px;
+}
+
+.form-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.section-number {
+  display: flex;
+  flex: 0 0 34px;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #e7f5f8;
+  color: #147b99;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.form-section-heading h3 {
+  margin: 0 0 3px;
+  color: #263241;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.form-section-heading p {
+  margin: 0;
+  color: #7a8496;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* =========================================
+   FORM FIELDS
+========================================= */
+
+.form-field {
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-control-modern {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #252d3d;
+  font-size: 14px;
+  line-height: 1.45;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+.form-control-modern::placeholder {
+  color: #98a2b3;
+}
+
+.form-control-modern:hover {
+  border-color: #c5ccd8;
+}
+
+.form-control-modern:focus {
+  border-color: #147b99;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(20, 123, 153, 0.12);
+}
+
+select.form-control-modern {
+  cursor: pointer;
+}
+
+.form-textarea {
+  min-height: 116px;
+  resize: vertical;
+}
+
+/* =========================================
+   VALIDATION
+========================================= */
+
+.input-error {
+  border-color: #dc2626 !important;
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.form-error {
+  margin: 7px 0 0;
+  color: #dc2626;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.add-job-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 4px;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #1e3a8a;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 750;
+  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.18);
+  transition:
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.add-job-submit:hover:not(:disabled) {
+  background: #183173;
+  box-shadow: 0 16px 28px rgba(30, 58, 138, 0.22);
+  transform: translateY(-1px);
+}
+
+.add-job-submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.add-job-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+}
+
+.submit-arrow {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* =========================================
+   RESPONSIVE GRID
+========================================= */
+
+@media (min-width: 768px) {
+  .add-job-page .col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .add-job-page .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .add-job-page .col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .add-job-page .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .add-job-page .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .add-job-page .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .add-job-page .col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .add-job-page .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+  .add-job-page {
+    padding: 28px 0;
+  }
+
+  .add-job-page .container-fluid {
+    padding: 0 20px;
+  }
+
+  .add-job-page .row {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .add-job-page .row > [class*="col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .add-job-layout,
+  .add-job-visual-section,
+  .add-job-form-section {
+    min-height: auto;
+  }
+
+  .add-job-visual-section {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .add-job-visual-inner {
+    width: min(100%, 420px);
+  }
+
+  .add-job-form-wrapper {
+    max-width: 640px;
+    padding: 34px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+  .add-job-page {
+    padding: 22px 0;
+  }
+
+  .add-job-page .container-fluid {
+    padding: 0 16px;
+  }
+
+  .add-job-layout {
+    row-gap: 20px;
+  }
+
+  .add-job-visual-section {
+    min-height: 340px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .add-job-visual-inner {
+    width: min(100%, 390px);
+  }
+
+  .add-job-form-section {
+    display: block;
+  }
+
+  .add-job-form-wrapper {
+    max-width: none;
+    padding: 30px 22px;
+  }
+
+  .add-job-heading {
+    margin-bottom: 28px;
+  }
+
+  .add-job-heading h3 {
+    font-size: 31px;
+  }
+
+  .form-section {
+    margin-bottom: 28px;
+  }
+
+  .form-section-heading {
+    gap: 10px;
+  }
+
+  .form-section-heading h3 {
+    font-size: 16px;
+  }
+
+  .form-control-modern {
+    min-height: 50px;
+  }
+
+  .form-textarea {
+    min-height: 124px;
+  }
+
+  .add-job-submit {
+    min-height: 54px;
+  }
+}
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+  .add-job-page .container-fluid {
+    padding: 0 12px;
+  }
+
+  .add-job-visual-section {
+    min-height: 300px;
+  }
+
+  .add-job-form-wrapper {
+    padding: 26px 16px;
+  }
+
+  .add-job-heading h3 {
+    font-size: 28px;
+  }
+}
